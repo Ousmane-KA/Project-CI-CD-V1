@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git 'https://ton-repo-git.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'pip install -r requirements.txt'
+            }
+        }
+
+        stage('Unit Tests') {
+            steps {
+                sh 'pytest tests/ --junitxml=test_results.xml'
+            }
+        }
+
+        stage('Code Quality Analysis') {
+            steps {
+                sh 'sonar-scanner'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t ci-cd-app .'
+            }
+        }
+
+        stage('Deploy Docker Container') {
+            steps {
+                sh 'docker run -d -p 5000:5000 ci-cd-app'
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'test_results.xml', fingerprint: true
+        }
+    }
+}
