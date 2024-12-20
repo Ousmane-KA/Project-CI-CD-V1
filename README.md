@@ -1,8 +1,18 @@
+
+## PLAN : 
+
+![image](https://github.com/user-attachments/assets/7e3850a4-00a9-4b41-bfaa-b222ef486c34)
+
+
+
+
+
+
 ## Mise en place de Jenkins avec Dockerfile et Docker-Compose
 
-mkdir Jenkins-Projet # création du dossier projet Jenkins
+mkdir Jenkins-Projet #création du dossier projet Jenkins
 
-cd Jenkins-Projet # Puis il faudra mettre le fichier du docker compose de jenkins
+cd Jenkins-Projet #Puis il faudra mettre le fichier du docker compose de jenkins
 
 - Pour l'installation de , il faudra faire un docker-compose up -d,
    
@@ -10,9 +20,9 @@ cd Jenkins-Projet # Puis il faudra mettre le fichier du docker compose de jenkin
 - Pour l'installation de jenkins sur le serveur, il faudra builder l'image de jenkins ensuite faire un docker-compose up -d
 ## Mise en place de Sonarqube avec Docker compose
 
-mkdir Sonarqube # création du dossier projet Sonar
+mkdir Sonarqube #création du dossier projet Sonar
 
-cd Sonarqube # Puis il faudra mettre le fichier du docker compose de Sonarqube
+cd Sonarqube #Puis il faudra mettre le fichier du docker compose de Sonarqube
 
 - Pour l'installation de sonarqube, il faudra faire un docker-compose up -d,
    
