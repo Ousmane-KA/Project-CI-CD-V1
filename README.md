@@ -84,6 +84,6 @@ Remarque : on a ajouter la partie sonar avec le projectkey qu'on avait créer
 
 On va mettre l'url du serveur jenkins sous la forme : http://<jenkins_server>/github-webhook/
 
-  
+  Remarque : le dossier App permet de faire les tests de notre pipeline donne il faudra pas prendre en compte le dossier sonar-jenkins.
 
 On peut demarrer notre Job!!!!!!
