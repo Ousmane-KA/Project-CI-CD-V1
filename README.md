@@ -1,6 +1,6 @@
 ## Mise en place de Jenkins avec Dockerfile et Docker-Compose
 ## Mise en place de Sonarqube avec Docker compose
-## Configuration de Jenkins
+## A) Configuration de Jenkins
 
 - Installation des plugin :
 
@@ -10,7 +10,7 @@ SSH2,
 Docker,
 Sonarqube
 
-### Installation de Sonarqube et Configuration : 
+### 1. Installation de Sonarqube et Configuration : 
 
 - Installation de sonarqube sur Jenkins, il faudra aller sur tools de jenkins :
 
@@ -21,6 +21,25 @@ Remarque: Il faudra générer des tocken sur Sonarqube et créer un projet
 - Il faudra faire l'intégration sur la partie Systeme de jenkins en ajoutant url, le token,
 
 ![image](https://github.com/user-attachments/assets/8220a056-1220-4711-a94f-a61ed690c996)
+
+### 2. Installation de docker serveur sur jenkins :
+
+- Installation de docker serveur sur tools :
+
+![image](https://github.com/user-attachments/assets/abc4cf99-2da0-4339-ad21-cf00e40c9e05)
+
+- Integration de docker serveur sur Sytème de jenkins :
+
+![image](https://github.com/user-attachments/assets/4c286468-d56f-48a8-a6d5-1ab488e8c582)
+
+## B) Mise en place du pipeline : 
+
+### 1. Création d'un job : 
+
+![image](https://github.com/user-attachments/assets/e7fde1bd-0aa6-449f-8b38-7d34fb49829b)
+
+
+
 
 
 configuration de Sonarqube
