@@ -1,4 +1,15 @@
 
+# PROJET DE MISE EN PLACE D'UNE PIPELINE CI-CD
+
+## A) Deploiement des serveur sur AZURE : 
+
+### 1.Configuration de  CLI Azure
+
+### Déploiement des trois serveurr Azure
+
+Pour le deploiementdes trois VM voir la configutation dans le dossier Terraform.
+
+
 ## PLAN : 
 
 ![image](https://github.com/user-attachments/assets/7e3850a4-00a9-4b41-bfaa-b222ef486c34)
