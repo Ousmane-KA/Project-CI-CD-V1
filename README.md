@@ -47,10 +47,7 @@ Installer l'outil CLI Azure. Pour ce faire, consultez la documentation officiell
 ![image](https://github.com/user-attachments/assets/7e3850a4-00a9-4b41-bfaa-b222ef486c34)
 
 
-**************************
-Voici une version corrigée et plus structurée de votre README :
 
----
 
 # Mise en place de Jenkins et Sonarqube avec Dockerfile et Docker-Compose
 
@@ -58,9 +55,9 @@ Voici une version corrigée et plus structurée de votre README :
 
 ### 1. Création du projet Jenkins
 ```bash
-mkdir Jenkins-Projet # Création du dossier du projet Jenkins
+mkdir Jenkins-Projet 
 cd Jenkins-Projet
-# Ajouter le fichier `docker-compose.yml` correspondant à Jenkins ici
+
 ```
 
 - Pour installer Jenkins :
@@ -73,9 +70,8 @@ cd Jenkins-Projet
 
 ### 1. Création du projet Sonarqube
 ```bash
-mkdir Sonarqube # Création du dossier du projet SonarQube
+mkdir Sonarqube
 cd Sonarqube
-# Ajouter le fichier `docker-compose.yml` correspondant à SonarQube ici
 ```
 
 - Pour installer SonarQube :
